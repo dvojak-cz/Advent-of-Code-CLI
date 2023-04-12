@@ -1,12 +1,12 @@
 package get
 
 import (
-	"net/http"
-	"net/http/cookiejar"
-	"time"
 	"github.com/dvojak-cz/Advent-of-Code-CLI/pkg/cred"
 	"github.com/dvojak-cz/Advent-of-Code-CLI/pkg/defs"
 	"github.com/spf13/cobra"
+	"net/http"
+	"net/http/cookiejar"
+	"time"
 )
 
 var (
