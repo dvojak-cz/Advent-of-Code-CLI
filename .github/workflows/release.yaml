@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - v*.*.*
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sed -Ei 's/(AppVersion[^"]*)"[^"]*".*/\1"${{ github.ref_name }}"/' pkg/defs/names.go
+      - run: grep -q 'AppVersion[[:space:]]*=[[:space:]]*"${{ github.ref_name }}"' pkg/defs/names.go
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body: ${{ github.event.head_commit.message }}
+          draft: false
+          prerelease: false
