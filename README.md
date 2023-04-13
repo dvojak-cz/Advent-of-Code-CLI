@@ -1,5 +1,8 @@
 # Advent of Code CLI (aof)
-Aoc is a simple CLI client for popular [AdventOfCode](https://adventofcode.com/). This client is ment to be used as a client for interacting with the website. This CLI allows to download puzzles as a `.md` file, allows downloading input data for a puzzle and can be used for submitting solutions of (see `dec` branch).
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/dvojak-cz/Advent-of-Code-CLI)](https://goreportcard.com/report/github.com/dvojak-cz/Advent-of-Code-CLI)
+
+Aoc is a simple CLI client for popular [AdventOfCode](https://adventofcode.com/). This client is ment to be used as a client for interacting with the website. This CLI allows to download puzzles as a `.md` file, allows downloading input data for a puzzle and can be used for submitting solutions of (see `dev` branch).
 
 ```txt
 Advent of Code CLI is a simple CLI for Advent of Code
