@@ -3,9 +3,7 @@ name: Build
 on:
   push:
     branches: [ "*" ]
-  pull_request:
-    branches: [ "*" ]
-
+    paths: ["*.go", "go.mod", "go.sum", "cmd/**", "pkg/**"]
 jobs:
 
   build:
